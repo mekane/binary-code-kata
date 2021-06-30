@@ -54,4 +54,11 @@ final class ProcessorTest extends TestCase
         $actual = process(['Start', 'Add', 'End', 'Add', 'Add', 'Sub', 'Add']);
         $this->assertEquals(1, $actual);
     }
+
+    /** @test */
+    public function ignoresMessagesBeforeStart(): void
+    {
+        $actual = process(['Add', 'Add', 'Start', 'Add', 'Add', 'Sub', 'End']);
+        $this->assertEquals(1, $actual);
+    }
 }
