@@ -1,0 +1,15 @@
+{
+  "name": "marty_kane/binary-code-kata",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Marty Kane",
+      "email": "marty.kane@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  }
+}
